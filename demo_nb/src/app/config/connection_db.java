@@ -1,4 +1,5 @@
 /*
+ * archivo conexion a mysql connection_db
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
