@@ -25,10 +25,8 @@ public class user {
     }
     public static ArrayList<app.model.user> buscar_user_email(String em) {
         return buscar("like", "email", em + "%");
-    }//usuario.replace("\\", "\\\\").replace("'", "\\'")
+    }
     private static ArrayList<app.model.user> buscar(String comparador, String campo, String parametro) {
-        System.out.print("select id_user,name,email,username,id_status from user where "
-                + comparador + " " + campo + " '" + parametro+"'");
         return consultarSQL("select id_user,name,email,username,id_status from user where "
                 + campo + " " + comparador + " '" + parametro+"'");
     }
